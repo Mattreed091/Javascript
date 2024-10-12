@@ -1,0 +1,124 @@
+.boldUnderline{
+  font-weight:bold;
+  text-decoration:underline;
+}
+.w3-example-border{
+    padding: 8px 20px;
+    margin: 24px -20px;
+    box-shadow: none!important;
+    background-color:#E7E9EB;
+    border-radius:5px;
+}
+.w3-info{
+  background-color: #D9EEE1;
+  border-left: none;
+  padding: 32px;
+  margin: 24px;
+    margin-right: 24px;
+    margin-left: 24px;
+  margin-left: -32px;
+  margin-right: -32px;
+}
+.w3-btn{
+  background-color: #04AA6D !important;
+  border-radius: 5px;
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 6px 18px;
+}
+}
+.intro {
+  font-size:16px;
+}
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#outputAnimation {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  background: red;
+}
+:root, body {
+    --mdn-color-white: #fff;
+    --mdn-color-black: #000;
+    --mdn-color-ads: #00d0aa;
+    --mdn-color-background-highlight: #f0e498;
+    --mdn-color-dark-grey: #4e4e4e;
+    --mdn-background-dark: #1b1b1b;
+    --mdn-background-light: #fff;
+    --mdn-background-light-grey: #e2e2e2;
+    --color-announcement-banner-accent: #ff6d91;
+body {
+    accent-color: var(--accent-primary);
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    scrollbar-color: var(--scrollbar-color) var(--scrollbar-bg);
+}
+:root {
+    --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-body: Inter, var(--font-fallback);
+    --font-heading: Inter, var(--font-fallback);
+    --font-code: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+    --base-font-size: 100%;
+    --base-line-height: 1.2;
+    --intermediate-line-height: 1.5;
+    --heading-line-height: var(--base-line-height);
+    --heading-letter-spacing: -0.031rem;
+    --font-content-line-height: 1.75;
+    --font-body-strong-weight: 600;
+    --type-heading-h1-font-size: 2.488rem;
+    --type-heading-h2-font-size: 2.074rem;
+    --type-heading-h3-font-size: 1.728rem;
+    --type-heading-h4-font-size: 1.44rem;
+    --type-heading-h5-font-size: 1.2rem;
+    --type-base-font-size-rem: 1rem;
+    --type-smaller-font-size: 0.833rem;
+    --type-tiny-font-size: 0.694rem;
+    --type-heading-h1-font-size-mobile: 1.802rem;
+    --type-heading-h2-font-size-mobile: 1.602rem;
+    --type-heading-h3-font-size-mobile: 1.424rem;
+    --type-heading-h4-font-size-mobile: 1.266rem;
+    --type-emphasis-m: var(--font-body-strong-weight) var(--type-smaller-font-size) / 1.23 var(--font-body);
+    --type-label-s: 600 var(--type-tiny-font-size) / 1.2 var(--font-heading);
+    --type-heading-h1: 600 var(--type-heading-h1-font-size-mobile) / var(--heading-line-height) var(--font-heading);
+    --type-heading-h2: 500 var(--type-heading-h2-font-size-mobile) / var(--heading-line-height) var(--font-heading);
+    --type-heading-h3: 300 var(--type-heading-h3-font-size-mobile) / var(--heading-line-height) var(--font-heading);
+    --type-heading-h4: 400 var(--type-heading-h4-font-size-mobile) / var(--heading-line-height) var(--font-heading);
+    --type-heading-h5: 400 var(--type-heading-h5-font-size) / var(--heading-line-height) var(--font-heading);
+    --type-heading-h6: 400 var(--type-base-font-size-rem) / var(--heading-line-height) var(--font-heading);
+    --type-article-p: 400 var(--type-base-font-size-rem) / var(--font-content-line-height) var(--font-body);
+    --max-width: 1440px;
+    --gutter: 1rem;
+    --top-navigation-height: 4rem;
+    --top-navigation-offset: -4rem;
+    --top-banner-inner-height: 3.125rem;
+    --top-banner-height: calc(var(--top-banner-inner-height) + 0.25rem);
+    --top-banner-outer-height: calc(var(--top-banner-height) + 2px);
+    --z-index-a11y: 10000;
+    --z-index-modal-content: 801;
+    --z-index-modal-overlay: 800;
+    --z-index-main-header: 700;
+    --z-index-sidebar-mobile: 600;
+    --z-index-mid: 500;
+    --z-index-nav-menu: 200;
+    --z-index-search-results: 101;
+    --z-index-low: 100;
+    --z-index-search-results-home: 99;
+    --z-index-back: -1;
+    --elem-radius: 0.25rem;
+    --focus-effect: 0 0 0 3px var(--accent-primary-engage);
+    --form-elem-height: 2rem;
+    --top-nav-height: 4rem;
+    --article-actions-container-height: 2rem;
+    --icon-size: 1rem;
+    --sticky-header-without-actions-height: calc(var(--top-nav-height) + 1px);
+    --sticky-header-with-actions-height: calc(var(--sticky-header-without-actions-height) + var(--article-actions-container-height) + 1px);
+}
