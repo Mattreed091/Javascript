@@ -26,7 +26,6 @@
   font-family: 'Source Sans Pro', sans-serif;
   padding: 6px 18px;
 }
-}
 .intro {
   font-size:16px;
 }
@@ -121,4 +120,5 @@ body {
     --icon-size: 1rem;
     --sticky-header-without-actions-height: calc(var(--top-nav-height) + 1px);
     --sticky-header-with-actions-height: calc(var(--sticky-header-without-actions-height) + var(--article-actions-container-height) + 1px);
+}
 }
