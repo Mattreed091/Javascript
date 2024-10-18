@@ -221,10 +221,10 @@ const JSONObjDate = document.getElementById('JSONObjDate');
 const JSONObjDateHead = document.getElementById('JSONObjDateHead');
 JSONObjDate.innerHTML = 'Today Is: ' + myJSONObj1[x] + ' ' + myJSONObj1[x] + ', ' + myJSONObj1.dayOfMonth + ' ' + myJSONObj1.year + '<br>' + 'Name: ' + myJSONObj1.name + ' City:' + myJSONObj1.city ;
 JSONObjDateHead.innerHTML = '<b>JSON on an object: </b><br>'
-for (const x in myJSONObj1) {
+for (const x in myJSONObj1) 
+{
   if(x == dayOfWeek)
   {
-    x = "Weekday:";
     switch (myJSONObj1[x]) {
       case 0:
         myJSONObj1[x]= "Sunday";
