@@ -271,7 +271,7 @@ for (const x in myJSONObj1)
   }
   else
   {
-    myJSONObj1[x] = myJSONObj1[x];
+    jsonObj1Output = 'Cant find Value that matches';
   }
   jsonObj1Output += x + ":" + myJSONObj1[x] + "<br>";
 }
