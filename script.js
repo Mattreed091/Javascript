@@ -261,11 +261,9 @@ for (const x in myJSONObj1)
       case 9:
         myJSONObj1[x]
         = "October";
-        break;
       case 10: 
       myJSONObj1[x]
       = "November";
-        break;
       case 11:
         myJSONObj1[x]
         = "December";
