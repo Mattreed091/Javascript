@@ -222,7 +222,7 @@ const JSONObjDateHead = document.getElementById('JSONObjDateHead');
 JSONObjDate.innerHTML = 'Today Is: ' + myJSONObjDay + ' ' + myJSONObjMonth + ', ' + myJSONObj1.dayOfMonth + ' ' + myJSONObj1.year + '<br>' + 'Name: ' + myJSONObj1.name + ' City:' + myJSONObj1.city ;
 JSONObjDateHead.innerHTML = '<b>JSON on an object: </b><br>'
 for (const x in myJSONObj1) {
-  jsonObj1Output += x + ":" + jsonObj1Output[x] + "<br>";
+  jsonObj1Output += x + ":" + myJSONObj1[x] + "<br>";
 }
 const JSONObjForInLoop = document.getElementById('JSONObjForInLoop');
 const JSONObjForInLoopHead = document.getElementById('JSONObjForInLoopHead');
