@@ -155,30 +155,30 @@ JSONObj1.year.toString();
 const myJSONObjStr1 = JSON.stringify(JSONObj1);
 const myJSONObj1 = JSON.parse(myJSONObjStr1);
 var JSONMonth;
-var dayOfWeek;
+var JSONDayOfWeek;
 var myJSONObjDate;
 var myJSONObjYear;
 switch (myJSONObj1.dayOfWeek) {
   case 0:
-    dayOfWeek = "Sunday";
+    JSONDayOfWeek = "Sunday";
     break;
   case 1:
-    dayOfWeek = "Monday";
+    JSONDayOfWeek = "Monday";
     break;
   case 2:
-    dayOfWeek = "Tuesday";
+    JSONDayOfWeek = "Tuesday";
     break;
   case 3:
-    dayOfWeek = "Wednesday";
+    JSONDayOfWeek = "Wednesday";
     break;
   case 4:
-    dayOfWeek = "Thursday";
+    JSONDayOfWeek = "Thursday";
     break;
   case 5:
-    dayOfWeek = "Friday";
+    JSONDayOfWeek = "Friday";
     break;
   case 6:
-    dayOfWeek = "Saturday";
+    JSONDayOfWeek = "Saturday";
 }
 switch (myJSONObj1.month) {
   case 0:
@@ -219,7 +219,7 @@ switch (myJSONObj1.month) {
 }
 const JSONObjDate = document.getElementById('JSONObjDate');
 const JSONObjDateHead = document.getElementById('JSONObjDateHead');
-JSONObjDate.innerHTML = 'Today Is: ' + dayOfWeek + ' ' + JSONMonth + ', ' + myJSONObj1.dayOfMonth + ' ' + myJSONObj1.year + '<br>' + 'Name: ' + myJSONObj1.name + ' City:' + myJSONObj1.city ;
+JSONObjDate.innerHTML = 'Today Is: ' + JSONDayOfWeek + ' ' + JSONMonth + ', ' + myJSONObj1.dayOfMonth + ' ' + myJSONObj1.year + '<br>' + 'Name: ' + myJSONObj1.name + ' City:' + myJSONObj1.city ;
 JSONObjDateHead.innerHTML = '<b>JSON on an object: </b><br>'
 for (const x in myJSONObj1) 
 {
