@@ -148,10 +148,10 @@ let jsonObj1Output = '';
 // JSON Boolean jsonBoolean
 // JSON Null  jsonNull
 const JSONObj1 = {name: "John", dayOfWeek: new Date().getDay(), month:new Date().getMonth(), dayOfMonth: new Date().getDate(), year: new Date().getFullYear(), city : "New York",};
-JSONObj1.dayOfWeek.toString;
-JSONObj1.month.toString;
-JSONObj1.dayOfMonth.toString;
-JSONObj1.year.toString;
+JSONObj1.dayOfWeek.toString();
+JSONObj1.month.toString();
+JSONObj1.dayOfMonth.toString();
+JSONObj1.year.toString();
 const myJSONObjStr1 = JSON.stringify(JSONObj1);
 const myJSONObj1 = JSON.parse(myJSONObjStr1);
 var myJSONObjDay;
