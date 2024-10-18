@@ -269,6 +269,10 @@ for (const x in myJSONObj1)
         = "December";
     }
   }
+  else
+  {
+    myJSONObj1[x] = myJSONObj1[x];
+  }
   jsonObj1Output += x + ":" + myJSONObj1[x] + "<br>";
 }
 const JSONObjForInLoop = document.getElementById('JSONObjForInLoop');
