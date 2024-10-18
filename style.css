@@ -1,3 +1,6 @@
+ul {
+  list-style-type: circle;
+}
 .boldUnderline{
   font-weight:bold;
   text-decoration:underline;
