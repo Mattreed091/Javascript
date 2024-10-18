@@ -154,74 +154,140 @@ JSONObj1.dayOfMonth.toString();
 JSONObj1.year.toString();
 const myJSONObjStr1 = JSON.stringify(JSONObj1);
 const myJSONObj1 = JSON.parse(myJSONObjStr1);
-var myJSONObjDay;
-var myJSONObjMonth;
+var dayOfMonth;
+var dayOfWeek;
 var myJSONObjDate;
 var myJSONObjYear;
 switch (myJSONObj1.dayOfWeek) {
   case 0:
-    myJSONObjDay = "Sunday";
+    dayOfWeek = "Sunday";
     break;
   case 1:
-    myJSONObjDay = "Monday";
+    dayOfWeek = "Monday";
     break;
   case 2:
-     myJSONObjDay = "Tuesday";
+    dayOfWeek = "Tuesday";
     break;
   case 3:
-    myJSONObjDay = "Wednesday";
+    dayOfWeek = "Wednesday";
     break;
   case 4:
-    myJSONObjDay = "Thursday";
+    dayOfWeek = "Thursday";
     break;
   case 5:
-    myJSONObjDay = "Friday";
+    dayOfWeek = "Friday";
     break;
   case 6:
-    myJSONObjDay = "Saturday";
+    dayOfWeek = "Saturday";
 }
 switch (myJSONObj1.month) {
   case 0:
-    myJSONObjMonth = "January";
+    dayOfMonth = "January";
     break;
   case 1:
-    myJSONObjMonth = "February";
+    dayOfMonth = "February";
     break;
   case 2:
-     myJSONObjMonth = "March";
+    dayOfMonth = "March";
     break;
   case 3:
-    myJSONObjMonth = "April";
+    dayOfMonth = "April";
     break;
   case 4:
-    myJSONObjMonth = "May";
+    dayOfMonth = "May";
     break;
   case 5:
-    myJSONObjMonth = "June";
+    dayOfMonth = "June";
     break;
   case 6:
-    myJSONObjMonth = "July";
+    dayOfMonth = "July";
     break;
   case 7 :
-    myJSONObjMonth = "August";
+    dayOfMonth = "August";
     break;
   case 8: 
-    myJSONObjMonth = "September";
+  dayOfMonth= "September";
     break;
   case 9:
-    myJSONObjMonth = "October";
+    dayOfMonth = "October";
     break;
   case 10: 
-    myJSONObjMonth = "November";
+  dayOfMonth = "November";
     break;
   case 11:
-    myJSONObjMonth = "December";
+    dayOfMonth = "December";
 }
 const JSONObjDate = document.getElementById('JSONObjDate');
 const JSONObjDateHead = document.getElementById('JSONObjDateHead');
-JSONObjDate.innerHTML = 'Today Is: ' + myJSONObjDay + ' ' + myJSONObjMonth + ', ' + myJSONObj1.dayOfMonth + ' ' + myJSONObj1.year + '<br>' + 'Name: ' + myJSONObj1.name + ' City:' + myJSONObj1.city ;
+JSONObjDate.innerHTML = 'Today Is: ' + myJSONObj1[x] + ' ' + myJSONObj1[x] + ', ' + myJSONObj1.dayOfMonth + ' ' + myJSONObj1.year + '<br>' + 'Name: ' + myJSONObj1.name + ' City:' + myJSONObj1.city ;
 JSONObjDateHead.innerHTML = '<b>JSON on an object: </b><br>'
 for (const x in myJSONObj1) {
+  if(x == dayOfWeek)
+  {
+    x = "Weekday:";
+    switch (myJSONObj1[x]) {
+      case 0:
+        myJSONObj1[x]= "Sunday";
+        break;
+      case 1:
+        myJSONObj1[x] = "Monday";
+        break;
+      case 2:
+         myJSONObj1[x] = "Tuesday";
+        break;
+      case 3:
+        myJSONObj1[x] = "Wednesday";
+        break;
+      case 4:
+        myJSONObj1[x] = "Thursday";
+        break;
+      case 5:
+        myJSONObj1[x] = "Friday";
+        break;
+      case 6:
+        myJSONObj1[x] = "Saturday";
+    }
+  }
+  if (x == month)
+  {
+    switch (myJSONObj1[x]) {
+      case 0:
+        myJSONObj1[x] = "January";
+        break;
+      case 1:
+        myJSONObj1[x] = "February";
+        break;
+      case 2:
+         myJSONObj1[x] = "March";
+        break;
+      case 3:
+        myJSONObj1[x] = "April";
+        break;
+      case 4:
+        myJSONObj1[x] = "May";
+        break;
+      case 5:
+        myJSONObj1[x] = "June";
+        break;
+      case 6:
+        myJSONObj1[x] = "July";
+        break;
+      case 7 :
+        myJSONObj1[x] = "August";
+        break;
+      case 8: 
+        myJSONObj1[x] = "September";
+        break;
+      case 9:
+        myJSONObj1[x] = "October";
+        break;
+      case 10: 
+        myJSONObj1[x] = "November";
+        break;
+      case 11:
+        myJSONObj1[x] = "December";
+    }
+  }
   jsonObj1Output += x + ":" + myJSONObj1[x] + "<br>";
 }
 const JSONObjForInLoop = document.getElementById('JSONObjForInLoop');
