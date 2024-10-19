@@ -228,3 +228,4 @@ for (const x in myJSONObj1)
 const JSONObjForInLoop = document.getElementById('JSONObjForInLoop');
 const JSONObjForInLoopHead = document.getElementById('JSONObjForInLoopHead');
 JSONObjForInLoop.innerHTML = jsonObj1Output;
+JSONObjForInLoopHead.innerHTML = 'Looping Through JSON Object';
