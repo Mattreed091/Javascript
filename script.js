@@ -1,5 +1,5 @@
 // ID's: localStorageSetItem & localStorageSetItemHead
-localStorage.setItem('name','John Doe');
+localStorage.setItem('name', 'John Doe');
 let localStorageSetItemOutput = localStorage.getItem("name");
 const localStorageSetItem = document.getElementById("localStorageSetItem");
 const localStorageSetItemHead = document.getElementById("localStorageSetItemHead");
@@ -25,8 +25,8 @@ async function getText(file) {
   document.getElementById("fetchAPI").innerHTML = y;
 }
 //function getLocation() {
-  //if (navigator.geolocation) {
-    //navigator.geolocation.getCurrentPosition(showPosition, showError);
+//if (navigator.geolocation) {
+//navigator.geolocation.getCurrentPosition(showPosition, showError);
 //  } else {
 //    document.getElementById('displayInMapGeoLocationAPI').innerHTML = "Geolocation is not supported by this browser.";
 //  }
@@ -34,27 +34,27 @@ async function getText(file) {
 //getLocation();
 //says coords from position object error
 //function showPosition(position) {
- // let latlon = position.coords.latitude + "," + position.coords.longitude;
-  //let img_url = 'https://maps.googleapis.com/maps/api/staticmap?center='
-  //+latlon+'&zoom=14&size=400x300&sensor=false&key=AIzaSyCWZ0Q97Wj26JRiss9mBt24He4Ig61erDY';
-  //document.getElementById("displayInMapGeoLocationAPI").innerHTML = "<img class='w3-center' src='"+img_url+"'>";
+// let latlon = position.coords.latitude + "," + position.coords.longitude;
+//let img_url = 'https://maps.googleapis.com/maps/api/staticmap?center='
+//+latlon+'&zoom=14&size=400x300&sensor=false&key=AIzaSyCWZ0Q97Wj26JRiss9mBt24He4Ig61erDY';
+//document.getElementById("displayInMapGeoLocationAPI").innerHTML = "<img class='w3-center' src='"+img_url+"'>";
 //}
 //cannot read error.code
 //function showError(error) {
 //  switch(Error.code) {
- //   case Error.PERMISSION_DENIED:
- //     document.getElementById("displayInMapGeoLocationAPI").innerHTML = "User denied the request for Geolocation."
-   //   break;
-   // case Error.POSITION_UNAVAILABLE:
-   //   document.getElementById("displayInMapGeoLocationAPI").innerHTML = "Location information is unavailable."
-     // break;
-    //case Error.TIMEOUT:
-    //  document.getElementById("displayInMapGeoLocationAPI").innerHTML = "The request to get user location timed out."
-     // break;
-  //  case Error.UNKNOWN_ERROR:
-     // document.getElementById("displayInMapGeoLocationAPI").innerHTML = "An unknown error occurred."
-     // break;
- // }
+//   case Error.PERMISSION_DENIED:
+//     document.getElementById("displayInMapGeoLocationAPI").innerHTML = "User denied the request for Geolocation."
+//   break;
+// case Error.POSITION_UNAVAILABLE:
+//   document.getElementById("displayInMapGeoLocationAPI").innerHTML = "Location information is unavailable."
+// break;
+//case Error.TIMEOUT:
+//  document.getElementById("displayInMapGeoLocationAPI").innerHTML = "The request to get user location timed out."
+// break;
+//  case Error.UNKNOWN_ERROR:
+// document.getElementById("displayInMapGeoLocationAPI").innerHTML = "An unknown error occurred."
+// break;
+// }
 //}
 //showError();
 //const displayInMapGeoLocationAPI = //document.getElementById('displayInMapGeoLocationAPI');
@@ -66,9 +66,9 @@ const AJAXIntroHead = document.getElementById('AJAXIntroHead');
 const AJAXIntroBTN = document.getElementById('AJAXIntroBTN');
 function loadDoc() {
   const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
+  xhttp.onload = function () {
     document.getElementById("AJAXIntro").innerHTML = this.responseText;
-    }
+  }
   xhttp.open("GET", "file://dollarbank.dom/dollardfs/Redirects/10004006/Documents/3.txt", true);
   xhttp.send();
 }
@@ -79,11 +79,13 @@ let personName = jsonOBJ.name;
 let personAge = jsonOBJ.age;
 //JSON Object with an array of 3 objects.
 //me creating JSON object
-let jsonOBJArray = {"employees": [
-  { "firstName":"John", "lastName":"Doe" },
-  { "firstName":"Anna", "lastName":"Smith" },
-  { "firstName":"Peter", "lastName":"Jones" }
- ]};
+let jsonOBJArray = {
+  "employees": [
+    { "firstName": "John", "lastName": "Doe" },
+    { "firstName": "Anna", "lastName": "Smith" },
+    { "firstName": "Peter", "lastName": "Jones" }
+  ]
+};
 //me making JSON object a string. 
 //must stringify Objects, Dates, Functions, and Arrays before being parsed by JSON.parse()
 const jsonOBJArrayStr = JSON.stringify(jsonOBJArray);
@@ -101,15 +103,15 @@ else {
   console.log(typeof jsonOBJArray);
 }
 //function arrayFunc(item, index, arr) {
-  //return arr[index] + item;
+//return arr[index] + item;
 //}
 //issue with getting values of employee array
-for(const[key, value]  of Object.entries(jsonOBJArray) ) {
+for (const [key, value] of Object.entries(jsonOBJArray)) {
   if (jsonOBJArray.hasOwnProperty(key)) {
-  //OBJ0Output += jsonOBJArray.employees.forEach(arrayFunc);
-      OBJ0Output += key +": " + value + "<br>";
+    //OBJ0Output += jsonOBJArray.employees.forEach(arrayFunc);
+    OBJ0Output += key + ": " + value + "<br>";
   }
-  }
+}
 const jsonOBJArrayID = document.getElementById('jsonOBJArrayID');
 const jsonOBJArrayIDHead = document.getElementById('jsonOBJArrayIDHead');
 // will get object name but will not get values of objects in array. work on fix 
@@ -133,9 +135,9 @@ const jsonNull = JSON.parse('{"middlename":null}');
 
 let jsonObj1Output = '';
 //for (let key in jsonOBJ1) {
- // if (objName.hasOwnProperty(key)) {
-   //jsonObj1Output += key + ': ' + jsonOBJ1[key] + "<br>";
-  //}
+// if (objName.hasOwnProperty(key)) {
+//jsonObj1Output += key + ': ' + jsonOBJ1[key] + "<br>";
+//}
 //}
 //jsonOBJArrayID.innerHTML = jsonOBJArrayStr;
 //all JSON Values Variables
@@ -146,7 +148,7 @@ let jsonObj1Output = '';
 // JSON Array jsonArray
 // JSON Boolean jsonBoolean
 // JSON Null  jsonNull
-const JSONObj1 = {name: "John", dayOfWeek: new Date().getDay(), month:new Date().getMonth(), dayOfMonth: new Date().getDate(), year: new Date().getFullYear(), city : "New York",};
+const JSONObj1 = { name: "John", dayOfWeek: new Date().getDay(), month: new Date().getMonth(), dayOfMonth: new Date().getDate(), year: new Date().getFullYear(), city: "New York", };
 JSONObj1.dayOfWeek.toString();
 JSONObj1.month.toString();
 JSONObj1.dayOfMonth.toString();
@@ -201,27 +203,26 @@ switch (myJSONObj1.month) {
   case 6:
     JSONMonth = "July";
     break;
-  case 7 :
+  case 7:
     JSONMonth = "August";
     break;
-  case 8: 
-  JSONMonth= "September";
+  case 8:
+    JSONMonth = "September";
     break;
   case 9:
     JSONMonth = "October";
     break;
-  case 10: 
-  JSONMonth = "November";
+  case 10:
+    JSONMonth = "November";
     break;
   case 11:
     JSONMonth = "December";
 }
 const JSONObjDate = document.getElementById('JSONObjDate');
 const JSONObjDateHead = document.getElementById('JSONObjDateHead');
-JSONObjDate.innerHTML = 'Today Is: ' + JSONDayOfWeek + ' ' + JSONMonth + ', ' + myJSONObj1.dayOfMonth + ' ' + myJSONObj1.year + '<br>' + 'Name: ' + myJSONObj1.name + ' City:' + myJSONObj1.city ;
+JSONObjDate.innerHTML = 'Today Is: ' + JSONDayOfWeek + ' ' + JSONMonth + ', ' + myJSONObj1.dayOfMonth + ' ' + myJSONObj1.year + '<br>' + 'Name: ' + myJSONObj1.name + ' City:' + myJSONObj1.city;
 JSONObjDateHead.innerHTML = '<b>JSON on an object: </b><br>'
-for (const x in myJSONObj1) 
-{
+for (const x in myJSONObj1) {
   jsonObj1Output += x + ":" + myJSONObj1[x] + "<br>";
 }
 const JSONObjForInLoop = document.getElementById('JSONObjForInLoop');
@@ -229,8 +230,8 @@ const JSONObjForInLoopHead = document.getElementById('JSONObjForInLoopHead');
 JSONObjForInLoop.innerHTML = jsonObj1Output;
 JSONObjForInLoopHead.innerHTML = 'Looping Through JSON Object';
 let jsonArrayOutput = '';
-for (let i = 0; i < jsonArray.length; i++) {
-  jsonArrayOutput += jsonArray[i] + ', ';
+for (let iCount in jsonArray) {
+  jsonArrayOutput += jsonArray[iCount] + ', ';
 }
 const JSONArrForLoop = document.getElementById('JSONArrForLoop');
 const JSONArrForLoopHead = document.getElementById('JSONArrForLoopHead');
