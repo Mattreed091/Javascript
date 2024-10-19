@@ -223,51 +223,6 @@ JSONObjDate.innerHTML = 'Today Is: ' + JSONDayOfWeek + ' ' + JSONMonth + ', ' + 
 JSONObjDateHead.innerHTML = '<b>JSON on an object: </b><br>'
 for (const x in myJSONObj1) 
 {
-  if (x == month)
-  {
-    switch (myJSONObj1[x]) {
-      case 0:
-        myJSONObj1[x] = "January";
-        
-      case 1:
-        myJSONObj1[x] = "February";
-    
-      case 2:
-        myJSONObj1[x] = "March";
-      case 3:
-        myJSONObj1[x]
-        = "April";
-      case 4:
-        myJSONObj1[x]
-        = "May";
-      case 5:
-        myJSONObj1[x]
-        = "June";
-      
-      case 6:
-        myJSONObj1[x]
-        = "July";
-      case 7 :
-        myJSONObj1[x]
-        = "August";
-      case 8: 
-      myJSONObj1[x]
-      = "September";
-      case 9:
-        myJSONObj1[x]
-        = "October";
-      case 10: 
-      myJSONObj1[x]
-      = "November";
-      case 11:
-        myJSONObj1[x]
-        = "December";
-    }
-  }
-  else
-  {
-    jsonObj1Output = 'Cant find Value that matches';
-  }
   jsonObj1Output += x + ":" + myJSONObj1[x] + "<br>";
 }
 const JSONObjForInLoop = document.getElementById('JSONObjForInLoop');
