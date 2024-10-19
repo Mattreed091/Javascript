@@ -229,6 +229,7 @@ const JSONObjForInLoopHead = document.getElementById('JSONObjForInLoopHead');
 JSONObjForInLoop.innerHTML = jsonObj1Output;
 JSONObjForInLoopHead.innerHTML = 'Looping Through JSON Object';
 let jsonArrayOutput;
+console.log(jsonArray);
 for (let i = 0; i < jsonArray.length; i++) {
   jsonArrayOutput += jsonArray[i] + ', ';
 }
