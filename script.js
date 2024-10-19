@@ -228,3 +228,11 @@ const JSONObjForInLoop = document.getElementById('JSONObjForInLoop');
 const JSONObjForInLoopHead = document.getElementById('JSONObjForInLoopHead');
 JSONObjForInLoop.innerHTML = jsonObj1Output;
 JSONObjForInLoopHead.innerHTML = 'Looping Through JSON Object';
+let jsonArrayOutput;
+for (let i = 0; i < jsonArray.length; i++) {
+  jsonArrayOutput += jsonArray[i] + ', ';
+}
+const JSONArrForLoop = document.getElementById('JSONArrForLoop');
+const JSONArrForLoopHead = document.getElementById('JSONArrForLoopHead');
+JSONArrForLoop.innerHTML = jsonArrayOutput;
+JSONArrForLoopHead.innerHTML = 'Looping through JSON array';
