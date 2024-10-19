@@ -124,8 +124,8 @@ const jsonNUM = JSON.parse('{"age":30}');
 // "employee":{"name":"John", "age":30, "city":"New York"}
 // });
 //JSON Arrays
-const jsonArray = JSON.parse(
-'["John", "Anna", "Peter"]');
+const jsonArrayString = '["John", "Anna", "Peter"]'
+const jsonArray = JSON.parse(jsonArrayString);
 //JSON Booleans
 const jsonBoolean = JSON.parse('{"sale":true}');
 //JSON null
