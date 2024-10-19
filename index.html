@@ -1992,16 +1992,66 @@
         <a target="_blank" class="w3-btn w3-margin-bottom"
           href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_literal">Try it Yourself »</a>
         </div>
-        <div class="w3-row">
-          <div class="w3-quarter w3-container"></div>
-          <div class="w3-half w3-panel w3-black w3-container" style="overflow-wrap:break-word;">
-            <h3 id="JSONArrForLoopHead" class="w3-center boldUnderline"></h3>
-            <p id="JSONArrforLoop" class="w3-center w3-content"></p>
-          </div>
-        <div class="w3-quarter w3-container"></div>
-      </div>
       <hr>
       <h3>Accessing Array Values</h3>
+      <p>You access array values by index:</p>
+      <div class="w3-example-border">
+        <h3>Example</h3>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+        myArray[<span class="jsnumbercolor" style="color:red">0</span>];<br><span class="jsnumbercolor" style="color:red">
+        </span> </span></div>
+        <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_index">Try it Yourself »</a>  
+        </div>
+        <hr>
+        <h3>Arrays in Objects</h3>
+        <p>Objects can contain arrays:</p>
+        <div class="w3-example-border">
+          <h3>Example</h3>
+          <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+          </span>{<br>
+          <span class="jsstringcolor" style="color:brown">"name"</span>:<span class="jsstringcolor" style="color:brown">"John"</span>,<br>
+          <span class="jsstringcolor" style="color:brown">"age"</span>:<span class="jsnumbercolor" style="color:red">30</span>,<br>
+          <span class="jsstringcolor" style="color:brown">"cars"</span>:[<span class="jsstringcolor" style="color:brown">"Ford"</span>, <span class="jsstringcolor" style="color:brown">"BMW"</span>, <span class="jsstringcolor" style="color:brown">"Fiat"</span>]<br><span class="jsnumbercolor" style="color:red">
+          </span>}<span class="jsnumbercolor" style="color:red">
+          </span> </span></div>
+          </div>
+          <p>You access array values by index:</p>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+            myObj.<span class="jspropertycolor" style="color:black">cars</span>[<span class="jsnumbercolor" style="color:red">0</span>];<br><span class="jsnumbercolor" style="color:red">
+            </span> </span></div>
+            <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_access">Try it Yourself »</a>  
+            </div>
+            <hr>
+            <h3>Looping Through an Array</h3>
+            <p>You can access array values by using a <code class="w3-codespan">for in</code> loop:</p>
+            <div class="w3-example-border">
+              <h3>Example</h3>
+              <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+              <span class="jskeywordcolor" style="color:mediumblue">for</span> (<span class="jskeywordcolor" style="color:mediumblue">let</span> i <span class="jskeywordcolor" style="color:mediumblue">in</span> myObj.<span class="jspropertycolor" style="color:black">cars</span>) {<br>&nbsp; <span class="jsnumbercolor" style="color:red">
+              </span>  x <span class="jsnumbercolor" style="color:red">
+              </span>  += myObj.<span class="jspropertycolor" style="color:black">cars</span>[i];<br>} </span></div>
+                <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_loop_in" target="_blank">Try it Yourself »</a>  
+              </div>
+              <p>Or you can use a <code class="w3-codespan">for</code> loop:</p>
+              <div class="w3-example-border">
+                <h3>Example</h3>
+                <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                </span>  <span class="jskeywordcolor" style="color:mediumblue">for</span> (<span class="jskeywordcolor" style="color:mediumblue">let</span> i <span class="jsnumbercolor" style="color:red">
+                </span>  = <span class="jsnumbercolor" style="color:red">0</span>; i &lt; myObj.<span class="jspropertycolor" style="color:black">cars</span>.<span class="jspropertycolor" style="color:black">length</span>; i++) {<br>&nbsp; x <span class="jsnumbercolor" style="color:red">
+                </span>  += myObj.<span class="jspropertycolor" style="color:black">cars</span>[i];<br>} </span></div>
+                  <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_loop" target="_blank">Try it Yourself »</a>  
+                </div>
+                <br>
+                <div class="w3-row">
+                  <div class="w3-quarter w3-container"></div>
+                  <div class="w3-half w3-panel w3-black w3-container" style="overflow-wrap:break-word;">
+                    <h3 id="JSONArrForLoopHead" class="w3-center boldUnderline"></h3>
+                    <p id="JSONArrforLoop" class="w3-center w3-content"></p>
+                  </div>
+                <div class="w3-quarter w3-container"></div>
+              </div>
     <script src="C:\Users\10004006\Downloads\Javascript-main\Javascript-main\script.js"></script>
   </body>
 </html>
