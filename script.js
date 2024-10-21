@@ -20,9 +20,9 @@ sessionStorageSetItemHead.innerHTML = 'Using <code class="w3-codespan">sessionSt
 getText("file:///dollarbank.dom/dollardfs/Redirects/10004006/Documents/3.txt");
 
 async function getText(file) {
-  let x = await fetch(file);
-  let y = await x.text();
-  document.getElementById("fetchAPI").innerHTML = y;
+    let x = await fetch(file);
+    let y = await x.text();
+    document.getElementById("fetchAPI").innerHTML = y;
 }
 //function getLocation() {
 //if (navigator.geolocation) {
@@ -64,13 +64,14 @@ async function getText(file) {
 const AJAXIntro = document.getElementById('AJAXIntro');
 const AJAXIntroHead = document.getElementById('AJAXIntroHead');
 const AJAXIntroBTN = document.getElementById('AJAXIntroBTN');
+
 function loadDoc() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function () {
-    document.getElementById("AJAXIntro").innerHTML = this.responseText;
-  }
-  xhttp.open("GET", "file://dollarbank.dom/dollardfs/Redirects/10004006/Documents/3.txt", true);
-  xhttp.send();
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        document.getElementById("AJAXIntro").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "file://dollarbank.dom/dollardfs/Redirects/10004006/Documents/3.txt", true);
+    xhttp.send();
 }
 //JSON Example
 const jsonOBJ = '{"name":"John", "age":30, "car":null}';
@@ -80,11 +81,19 @@ let personAge = jsonOBJ.age;
 //JSON Object with an array of 3 objects.
 //me creating JSON object
 let jsonOBJArray = {
-  "employees": [
-    { "firstName": "John", "lastName": "Doe" },
-    { "firstName": "Anna", "lastName": "Smith" },
-    { "firstName": "Peter", "lastName": "Jones" }
-  ]
+    "employees": [{
+            "firstName": "John",
+            "lastName": "Doe"
+        },
+        {
+            "firstName": "Anna",
+            "lastName": "Smith"
+        },
+        {
+            "firstName": "Peter",
+            "lastName": "Jones"
+        }
+    ]
 };
 //me making JSON object a string. 
 //must stringify Objects, Dates, Functions, and Arrays before being parsed by JSON.parse()
@@ -96,21 +105,20 @@ jsonOBJArray = JSON.parse(jsonOBJArrayStr);
 //let arrayOBJ0 = jsonOBJArray[0];
 let OBJ0Output = '';
 if (Symbol.iterator in Object(jsonOBJArray)) {
-  console.log(true);
-}
-else {
-  console.log(false);
-  console.log(typeof jsonOBJArray);
+    console.log(true);
+} else {
+    console.log(false);
+    console.log(typeof jsonOBJArray);
 }
 //function arrayFunc(item, index, arr) {
 //return arr[index] + item;
 //}
 //issue with getting values of employee array
 for (const [key, value] of Object.entries(jsonOBJArray)) {
-  if (jsonOBJArray.hasOwnProperty(key)) {
-    //OBJ0Output += jsonOBJArray.employees.forEach(arrayFunc);
-    OBJ0Output += key + ": " + value + "<br>";
-  }
+    if (jsonOBJArray.hasOwnProperty(key)) {
+        //OBJ0Output += jsonOBJArray.employees.forEach(arrayFunc);
+        OBJ0Output += key + ": " + value + "<br>";
+    }
 }
 const jsonOBJArrayID = document.getElementById('jsonOBJArrayID');
 const jsonOBJArrayIDHead = document.getElementById('jsonOBJArrayIDHead');
@@ -148,7 +156,14 @@ let jsonObj1Output = '';
 // JSON Array jsonArray
 // JSON Boolean jsonBoolean
 // JSON Null  jsonNull
-const JSONObj1 = { name: "John", dayOfWeek: new Date().getDay(), month: new Date().getMonth(), dayOfMonth: new Date().getDate(), year: new Date().getFullYear(), city: "New York", };
+const JSONObj1 = {
+    name: "John",
+    dayOfWeek: new Date().getDay(),
+    month: new Date().getMonth(),
+    dayOfMonth: new Date().getDate(),
+    year: new Date().getFullYear(),
+    city: "New York",
+};
 JSONObj1.dayOfWeek.toString();
 JSONObj1.month.toString();
 JSONObj1.dayOfMonth.toString();
@@ -160,70 +175,70 @@ var JSONDayOfWeek;
 var myJSONObjDate;
 var myJSONObjYear;
 switch (myJSONObj1.dayOfWeek) {
-  case 0:
-    JSONDayOfWeek = "Sunday";
-    break;
-  case 1:
-    JSONDayOfWeek = "Monday";
-    break;
-  case 2:
-    JSONDayOfWeek = "Tuesday";
-    break;
-  case 3:
-    JSONDayOfWeek = "Wednesday";
-    break;
-  case 4:
-    JSONDayOfWeek = "Thursday";
-    break;
-  case 5:
-    JSONDayOfWeek = "Friday";
-    break;
-  case 6:
-    JSONDayOfWeek = "Saturday";
+    case 0:
+        JSONDayOfWeek = "Sunday";
+        break;
+    case 1:
+        JSONDayOfWeek = "Monday";
+        break;
+    case 2:
+        JSONDayOfWeek = "Tuesday";
+        break;
+    case 3:
+        JSONDayOfWeek = "Wednesday";
+        break;
+    case 4:
+        JSONDayOfWeek = "Thursday";
+        break;
+    case 5:
+        JSONDayOfWeek = "Friday";
+        break;
+    case 6:
+        JSONDayOfWeek = "Saturday";
 }
 switch (myJSONObj1.month) {
-  case 0:
-    JSONMonth = "January";
-    break;
-  case 1:
-    JSONMonth = "February";
-    break;
-  case 2:
-    JSONMonth = "March";
-    break;
-  case 3:
-    JSONMonth = "April";
-    break;
-  case 4:
-    JSONMonth = "May";
-    break;
-  case 5:
-    JSONMonth = "June";
-    break;
-  case 6:
-    JSONMonth = "July";
-    break;
-  case 7:
-    JSONMonth = "August";
-    break;
-  case 8:
-    JSONMonth = "September";
-    break;
-  case 9:
-    JSONMonth = "October";
-    break;
-  case 10:
-    JSONMonth = "November";
-    break;
-  case 11:
-    JSONMonth = "December";
+    case 0:
+        JSONMonth = "January";
+        break;
+    case 1:
+        JSONMonth = "February";
+        break;
+    case 2:
+        JSONMonth = "March";
+        break;
+    case 3:
+        JSONMonth = "April";
+        break;
+    case 4:
+        JSONMonth = "May";
+        break;
+    case 5:
+        JSONMonth = "June";
+        break;
+    case 6:
+        JSONMonth = "July";
+        break;
+    case 7:
+        JSONMonth = "August";
+        break;
+    case 8:
+        JSONMonth = "September";
+        break;
+    case 9:
+        JSONMonth = "October";
+        break;
+    case 10:
+        JSONMonth = "November";
+        break;
+    case 11:
+        JSONMonth = "December";
 }
 const JSONObjDate = document.getElementById('JSONObjDate');
 const JSONObjDateHead = document.getElementById('JSONObjDateHead');
 JSONObjDate.innerHTML = 'Today Is: ' + JSONDayOfWeek + ' ' + JSONMonth + ', ' + myJSONObj1.dayOfMonth + ' ' + myJSONObj1.year + '<br>' + 'Name: ' + myJSONObj1.name + ' City:' + myJSONObj1.city;
 JSONObjDateHead.innerHTML = '<b>JSON on an object: </b><br>'
 for (const x in myJSONObj1) {
-  jsonObj1Output += x + ":" + myJSONObj1[x] + "<br>";
+    jsonObj1Output += x + ":" + myJSONObj1[x] + "<br>";
 }
 const JSONObjForInLoop = document.getElementById('JSONObjForInLoop');
 const JSONObjForInLoopHead = document.getElementById('JSONObjForInLoopHead');
@@ -231,9 +246,19 @@ JSONObjForInLoop.innerHTML = jsonObj1Output;
 JSONObjForInLoopHead.innerHTML = 'Looping Through JSON Object';
 let jsonArrayOutput = '';
 for (let iCount in jsonArray) {
-  jsonArrayOutput += jsonArray[iCount] + ', ';
+    jsonArrayOutput += jsonArray[iCount] + ', ';
 }
 const JSONArrForLoop = document.getElementById('JSONArrForLoop');
 const JSONArrForLoopHead = document.getElementById('JSONArrForLoopHead');
 JSONArrForLoop.innerHTML = jsonArrayOutput;
 JSONArrForLoopHead.innerHTML = 'Looping through JSON array';
+const JSONServReq = document.getElementById('JSONServReq');
+const JSONServReqHead = document.getElementById('JSONServReqHead');
+//creatting HTTP request
+const JSONDemoTxtHttp = new XMLHttpRequest();
+JSONDemoTxtHttp.onload = function() {
+    const myObj = JSON.parse(this.responseText);
+    JSONServReq.innerHTML = myObj.name;
+}
+JSONDemoTxtHttp.open("GET", "https://www.w3schools.com/js/json_demo.txt")
+JSONDemoTxtHttp.send();

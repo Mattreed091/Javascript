@@ -364,7 +364,7 @@
     <hr>
     <h3>Full Web Worker Example Code</h3>
     <p>We have already seen the Worker code in the .js file. Below is the code for the HTML page:</p>
-    <div class="w3-example">
+    <div class="w3-example-border">
         <h3>Example</h3>
         <div class="w3-code notranslate htmlHigh">
             <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
@@ -441,7 +441,7 @@
             Try it Yourself »</a>
     </div>
     <p>Or even better: Use understandable names instead of x and y:</p>
-    <div class="w3-example">
+    <div class="w3-example-border">
         <h3>Example</h3>
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
                 <span class="jskeywordcolor" style="color:mediumblue">async</span> <span class="jskeywordcolor" style="color:mediumblue">function</span> getText(file) {<br><span class="jsnumbercolor" style="color:red">
@@ -968,21 +968,21 @@
             </span> </span></div>
 </div>
 <p>You can access a JavaScript object like this:</p>
-<div class="w3-example">
+<div class="w3-example-border">
     <h3>Example</h3>
     <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
             </span> <span class="commentcolor" style="color:green">// returns John<br></span>person.<span class="jspropertycolor" style="color:black">name</span>; </span></div>
     <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_object_access" target="_blank">Try it Yourself »</a>
 </div>
 <p>It can also be accessed like this:</p>
-<div class="w3-example">
+<div class="w3-example-border>
     <h3>Example</h3>
-    <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
-            </span> <span class="commentcolor" style="color:green">// returns John<br></span>person[<span class="jsstringcolor" style="color:brown">"name"</span>]; </span></div>
-    <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_object_access2" target="_blank">Try it Yourself »</a>
+    <div class=" w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+        </span> <span class="commentcolor" style="color:green">// returns John<br></span>person[<span class="jsstringcolor" style="color:brown">"name"</span>]; </span></div>
+<a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_object_access2" target="_blank">Try it Yourself »</a>
 </div>
 <p>Data can be modified like this:</p>
-<div class="w3-example">
+<div class="w3-example-border">
     <h3>Example</h3>
     <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
             </span> person.<span class="jspropertycolor" style="color:black">name</span> = <span class="jsstringcolor" style="color:brown">"Gilbert"</span>; </span></div>
@@ -1315,12 +1315,16 @@
 <div class="w3-example-border">
     <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
             <span class="jskeywordcolor" style="color:mediumblue">const</span> arr = [<span class="jsstringcolor" style="color:brown">"John"</span>, <span class="jsstringcolor" style="color:brown">"Peter"</span>, <span class="jsstringcolor" style="color:brown">"Sally"</span>, <span class="jsstringcolor" style="color:brown">"Jane"</span>];<span class="jsnumbercolor" style="color:red">
-            </span> </span></div>
+            </span>
+        </span>
+    </div>
 </div>
-<p>Use the JavaScript function <code class="w3-codespan">JSON.stringify()</code> to convert it into a string.</p>
+<p>Use the JavaScript function <code class="w3-codespan">JSON.stringify()</code> to convert it into a string.
+</p>
 <div class="w3-example-border">
     <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
-            <span class="jskeywordcolor" style="color:mediumblue">const</span> myJSON = JSON.<span class="jspropertycolor" style="color:black">stringify</span>(arr); </span></div>
+            <span class="jskeywordcolor" style="color:mediumblue">const</span> myJSON = JSON.<span class="jspropertycolor" style="color:black">stringify</span>(arr); </span>
+    </div>
 </div>
 <div class="w3-panel w3-pale-yellow">
     <p>The result will be a string following the JSON notation.</p>
@@ -1335,6 +1339,7 @@
             </span> </span></div>
     <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_stringify_array" target="_blank">Try it Yourself »</a>
 </div>
+</div>
 <p>You will learn how to send a JSON string to a server in the next chapters.</p>
 <hr>
 <h3>Storing Data</h2>
@@ -1342,7 +1347,7 @@
         <em>text</em> is always one of the legal formats.
     </p>
     <p>JSON makes it possible to store JavaScript objects as text.</p>
-    <div class="w3-example">
+    <div class="w3-example-border">
         <h3>Example</h3>
         <p>Storing data in local storage</p>
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
@@ -1361,7 +1366,7 @@
     <h4>Stringify Dates</h4>
     <p>In JSON, date objects are not allowed. The <code class="w3-codespan">JSON.stringify()</code> function will convert
         any dates into strings.</p>
-    <div class="w3-example">
+    <div class="w3-example-border">
         <h3>Example</h3>
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
                 <span class="jskeywordcolor" style="color:mediumblue">const</span> obj = {name: <span class="jsstringcolor" style="color:brown">"John"</span>, today: <span class="jskeywordcolor" style="color:mediumblue">new</span>
@@ -1385,7 +1390,7 @@
     <p>In JSON, functions are not allowed as object values.</p>
     <p>The <code class="w3-codespan">JSON.stringify()</code> function will remove any functions from a JavaScript
         object, both the key and the value:</p>
-    <div class="w3-example">
+    <div class="w3-example-border">
         <h3>Example</h3>
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
                 <span class="jskeywordcolor" style="color:mediumblue">const</span> obj = {name: <span class="jsstringcolor" style="color:brown">"John"</span>, age: <span class="jskeywordcolor" style="color:mediumblue">function</span>
@@ -1396,7 +1401,7 @@
     </div>
     <p>This can be omitted if you convert your functions into strings before running
         the <code class="w3-codespan">JSON.stringify()</code> function.</p>
-    <div class="w3-example">
+    <div class="w3-example-border">
         <h3>Example</h3>
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
                 <span class="jskeywordcolor" style="color:mediumblue">const</span> obj = {name: <span class="jsstringcolor" style="color:brown">"John"</span>, age: <span class="jskeywordcolor" style="color:mediumblue">function</span>
@@ -1423,7 +1428,7 @@
         </div>
     </div>
     <p>Inside the JSON string there is a JSON object literal:</p>
-    <div class="w3-example">
+    <div class="" w3-example-border>
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
                 </span>{<span class="jsstringcolor" style="color:brown">"name"</span>:<span class="jsstringcolor" style="color:brown">"John"</span>, <span class="jsstringcolor" style="color:brown">"age"</span>:<span class="jsnumbercolor" style="color:red">30</span>, <span class="jsstringcolor" style="color:brown">"car"</span>:<span class="jskeywordcolor" style="color:mediumblue">null</span>}<span class="jsnumbercolor" style="color:red">
                 </span> </span>
@@ -1454,7 +1459,7 @@
     <h3>JavaScript Objects</h3>
     <p>You can create a JavaScript object from a JSON object literal:
     </p>
-    <div class="w3-example">
+    <div class="w3-example-border">
         <h3>Example</h3>
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
                 myObj = {<span class="jsstringcolor" style="color:brown">"name"</span>:<span class="jsstringcolor" style="color:brown">"John"</span>, <span class="jsstringcolor" style="color:brown">"age"</span>:<span class="jsnumbercolor" style="color:red">30</span>, <span class="jsstringcolor" style="color:brown">"car"</span>:<span class="jskeywordcolor" style="color:mediumblue">null</span>};<span class="jsnumbercolor" style="color:red">
@@ -1484,7 +1489,7 @@
         <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_object_dot">Try it Yourself »</a>
     </div>
     <p>You can also access object values by using bracket ([]) notation:</p>
-    <div class="w3-example">
+    <div class="w3-example-border">
         <h3>Example</h3>
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
                 <span class="jskeywordcolor" style="color:mediumblue">const</span> myJSON = <span class="jsstringcolor" style="color:brown">'{"name":"John", "age":30, "car":null}'</span>;<br>
@@ -1495,7 +1500,7 @@
     <hr>
     <h3>Looping an Object</h3>
     <p>You can loop through object properties with a for-in loop:</p>
-    <div class="w3-example">
+    <div class="w3-example-border">
         <h3>Example</h3>
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
                 <span class="jskeywordcolor" style="color:mediumblue">const</span> myJSON = <span class="jsstringcolor" style="color:brown">'{"name":"John", "age":30, "car":null}'</span>;<br>
@@ -1510,7 +1515,7 @@
         <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_object_loop">Try it Yourself »</a>
     </div>
     <p>In a for-in loop, use the bracket notation to access the property <em>values</em>:</p>
-    <div class="w3-example">
+    <div class="w3-example-border">
         <h3>Example</h3>
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
                 <span class="jskeywordcolor" style="color:mediumblue">const</span> myJSON = <span class="jsstringcolor" style="color:brown">'{"name":"John", "age":30, "car":null}'</span>;<br>
@@ -1549,7 +1554,8 @@
     <div class="w3-example-border">
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
                 </span>[<span class="jsstringcolor" style="color:brown">"Ford"</span>, <span class="jsstringcolor" style="color:brown">"BMW"</span>, <span class="jsstringcolor" style="color:brown">"Fiat"</span>]<span class="jsnumbercolor" style="color:red">
-                </span> </span></div>
+                </span> </span>
+        </div>
     </div>
     <p>Arrays in JSON are almost the same as arrays in JavaScript.</p>
     <p>In JSON, array values must be of type string, number, object, array, boolean
@@ -1572,7 +1578,8 @@
             <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
                     myJSON = <span class="jsstringcolor" style="color:brown">'["Ford", "BMW", "Fiat"]'</span>;<br>
                     myArray = JSON.<span class="jspropertycolor" style="color:black">parse</span>(myJSON);<span class="jsnumbercolor" style="color:red">
-                    </span> </span></div>
+                    </span> </span>
+            </div>
             <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_parse">Try it Yourself »</a>
         </div>
         <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_literal">Try it Yourself »</a>
@@ -1584,7 +1591,8 @@
         <h3>Example</h3>
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
                 myArray[<span class="jsnumbercolor" style="color:red">0</span>];<br><span class="jsnumbercolor" style="color:red">
-                </span> </span></div>
+                </span> </span>
+        </div>
         <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_index">Try it Yourself »</a>
     </div>
     <hr>
@@ -1598,14 +1606,16 @@
                 <span class="jsstringcolor" style="color:brown">"age"</span>:<span class="jsnumbercolor" style="color:red">30</span>,<br>
                 <span class="jsstringcolor" style="color:brown">"cars"</span>:[<span class="jsstringcolor" style="color:brown">"Ford"</span>, <span class="jsstringcolor" style="color:brown">"BMW"</span>, <span class="jsstringcolor" style="color:brown">"Fiat"</span>]<br><span class="jsnumbercolor" style="color:red">
                 </span>}<span class="jsnumbercolor" style="color:red">
-                </span> </span></div>
+                </span> </span>
+        </div>
     </div>
     <p>You access array values by index:</p>
-    <div class="w3-example">
+    <div class="w3-example-border">
         <h3>Example</h3>
         <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
                 myObj.<span class="jspropertycolor" style="color:black">cars</span>[<span class="jsnumbercolor" style="color:red">0</span>];<br><span class="jsnumbercolor" style="color:red">
-                </span> </span></div>
+                </span> </span>
+        </div>
         <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_access">Try it Yourself »</a>
     </div>
     <hr>
@@ -1617,17 +1627,21 @@
                 <span class="jskeywordcolor" style="color:mediumblue">for</span> (<span class="jskeywordcolor" style="color:mediumblue">let</span> i <span class="jskeywordcolor" style="color:mediumblue">in</span>
                 myObj.<span class="jspropertycolor" style="color:black">cars</span>) {<br>&nbsp; <span class="jsnumbercolor" style="color:red">
                 </span> x <span class="jsnumbercolor" style="color:red">
-                </span> += myObj.<span class="jspropertycolor" style="color:black">cars</span>[i];<br>} </span></div>
+                </span> += myObj.<span class="jspropertycolor" style="color:black">cars</span>[i];<br>} </span>
+        </div>
         <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_loop_in" target="_blank">Try it Yourself »</a>
     </div>
     <p>Or you can use a <code class="w3-codespan">for</code> loop:</p>
     <div class="w3-example-border">
         <h3>Example</h3>
-        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+        <div class="w3-code notranslate jsHigh">
+            <span class="jscolor" style="color:black">
+                <span class="jsnumbercolor" style="color:red">
                 </span> <span class="jskeywordcolor" style="color:mediumblue">for</span> (<span class="jskeywordcolor" style="color:mediumblue">let</span> i <span class="jsnumbercolor" style="color:red">
                 </span> = <span class="jsnumbercolor" style="color:red">0</span>; i &lt; myObj.<span class="jspropertycolor" style="color:black">cars</span>.<span class="jspropertycolor" style="color:black">length</span>; i++)
                 {<br>&nbsp; x <span class="jsnumbercolor" style="color:red">
-                </span> += myObj.<span class="jspropertycolor" style="color:black">cars</span>[i];<br>} </span></div>
+                </span> += myObj.<span class="jspropertycolor" style="color:black">cars</span>[i];<br>} </span>
+        </div>
         <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_array_loop" target="_blank">Try it Yourself »</a>
     </div>
     </div>
@@ -1640,6 +1654,96 @@
         </div>
     </div>
     <div class="w3-quarter w3-container"></div>
+    <hr>
+    <div class="w3-clear"></div>
+    <hr>
+    <h2 class="w3-center w3-content">JSON Server</h2>
+    <p class="intro">A common use of JSON is to exchange data to/from a web server.</p>
+    <p class="intro">When receiving data from a web server, the data is always a string.</p>
+    <p class="intro">Parse the data with <code class="w3-codespan">JSON.parse()</code>, and the data becomes a JavaScript object.</p>
+    <hr>
+    <h3>Sending Data</h3>
+    <p>
+        If you have data stored in a JavaScript object, you can convert the object
+        into JSON, and send it to a server:
+    </p>
+    <div class="w3-example-border">
+        <h3>Example</h3>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                </span> <span class="jskeywordcolor" style="color:mediumblue">const</span> myObj = {name: <span class="jsstringcolor" style="color:brown">"John"</span>, <span class="jsnumbercolor" style="color:red">
+                </span> age: <span class="jsnumbercolor" style="color:red">31</span>, city: <span class="jsstringcolor" style="color:brown">"New York"</span>};<br><span class="jskeywordcolor" style="color:mediumblue">const</span> myJSON = <span class="jsnumbercolor" style="color:red">
+                </span> JSON.<span class="jspropertycolor" style="color:black">stringify</span>(myObj);<br>window.<span class="jspropertycolor" style="color:black">location</span> = <span class="jsstringcolor" style="color:brown">"demo_json.php?x="</span> + myJSON;<br><span class="jsnumbercolor" style="color:red">
+                </span> </span></div>
+        <a target="_blank" class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_send">Try it Yourself »</a>
+    </div>
+    <hr>
+    <h3>Receiving Data</h3>
+    <p>
+        If you receive data in JSON format, you can easily convert it into a JavaScript
+        object:
+    </p>
+    <div class="w3-example-border">
+        <h3>Example</h3>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                </span> <span class="jskeywordcolor" style="color:mediumblue">const</span> myJSON =<span class="jsnumbercolor" style="color:red">
+                </span> <span class="jsstringcolor" style="color:brown">'{"name":"John",
+                    "age":31, "city":"New York"}'</span>;<br><span class="jskeywordcolor" style="color:mediumblue">const</span> myObj = <span class="jsnumbercolor" style="color:red">
+                </span> JSON.<span class="jspropertycolor" style="color:black">parse</span>(myJSON);<br>document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = myObj.<span class="jspropertycolor" style="color:black">name</span>; </span></div>
+        <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_receive" target="_blank">Try it Yourself »</a>
+    </div>
+    <hr>
+    <h3>JSON From a Server</h3>
+    <p>You can request JSON from the server by using an AJAX request</p>
+    <p>As long as the response from the server is written in JSON format, you can
+        parse the string into a JavaScript object.</p>
+    <div class="w3-example-border">
+        <h3>Example</h3>
+        <p>Use the XMLHttpRequest to get data from the server:</p>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">const</span> xmlhttp = <span class="jskeywordcolor" style="color:mediumblue">new</span> XMLHttpRequest();<br>
+                xmlhttp.<span class="jspropertycolor" style="color:black">onload</span> = <span class="jskeywordcolor" style="color:mediumblue">function</span>() {<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">const</span> myObj = JSON.<span class="jspropertycolor" style="color:black">parse</span>(<span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">responseText</span>);<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = myObj.<span class="jspropertycolor" style="color:black">name</span>;<br><span class="jsnumbercolor" style="color:red">
+                </span>};<br>
+                xmlhttp.<span class="jspropertycolor" style="color:black">open</span>(<span class="jsstringcolor" style="color:brown">"GET"</span>, <span class="jsstringcolor" style="color:brown">"json_demo.txt"</span>);<br>
+                xmlhttp.<span class="jspropertycolor" style="color:black">send</span>();<span class="jsnumbercolor" style="color:red">
+                </span> </span>
+        </div>
+        <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_ajax" target="_blank">Try it Yourself »</a>
+        <p>Take a look at <a href="json_demo.txt" target="_blank">json_demo.txt</a></p>
+    </div>
+    <div class="w3-row">
+        <div class="w3-quarter w3-container"></div>
+        <div class="w3-half w3-panel w3-black w3-container" style="overflow-wrap:break-word;">
+            <h3 id="JSONServReqHead" class="w3-center boldUnderline"></h3>
+            <p id="JSONServReq" class="w3-center w3-content"></p>
+        </div>
+        <div class="w3-quarter w3-container"></div>
+    </div>
+    <hr>
+    <h3>Array as JSON</h3>
+    <p>
+        When using the <code class="w3-codespan">JSON.parse()</code> on JSON derived from an array, the method will
+        return a JavaScript array, instead of a JavaScript object.
+    </p>
+    <div class="w3-example-border">
+        <h3>Example</h3>
+        <p>JSON returned from a server as an array:</p>
+        <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
+                <span class="jskeywordcolor" style="color:mediumblue">const</span> xmlhttp = <span class="jskeywordcolor" style="color:mediumblue">new</span> XMLHttpRequest();<br>
+                xmlhttp.<span class="jspropertycolor" style="color:black">onload</span> = <span class="jskeywordcolor" style="color:mediumblue">function</span>() {<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">const</span> myArr = JSON.<span class="jspropertycolor" style="color:black">parse</span>(<span class="jskeywordcolor" style="color:mediumblue">this</span>.<span class="jspropertycolor" style="color:black">responseText</span>);<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = myArr[<span class="jsnumbercolor" style="color:red">0</span>];<br><span class="jsnumbercolor" style="color:red">
+                </span>&nbsp;&nbsp;}<br><span class="jsnumbercolor" style="color:red">
+                </span>}<br>
+                xmlhttp.<span class="jspropertycolor" style="color:black">open</span>(<span class="jsstringcolor" style="color:brown">"GET"</span>, <span class="jsstringcolor" style="color:brown">"json_demo_array.txt"</span>, <span class="jskeywordcolor" style="color:mediumblue">true</span>);<br>
+                xmlhttp.<span class="jspropertycolor" style="color:black">send</span>();<span class="jsnumbercolor" style="color:red">
+                </span> </span>
+        </div>
+        <a class="w3-btn w3-margin-bottom" href="https://www.w3schools.com/js/tryit.asp?filename=tryjson_ajax_array" target="_blank">Try it Yourself »</a>
+        <p>Take a look at <a href="json_demo_array.txt" target="_blank">json_demo_array.txt</a></p>
+    </div>
+    <br>
 
     <script src="C:\Users\10004006\Downloads\Javascript-main\Javascript-main\script.js"></script>
     </body>
