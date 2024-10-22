@@ -260,6 +260,6 @@ JSONDemoTxtHttp.onload = function() {
     const myObj = JSON.parse(this.responseText);
     JSONServReq.innerHTML = myObj.name;
 }
-JSONDemoTxtHttp.open("GET", "json_demo.txt")
+JSONDemoTxtHttp.open("GET", "C:\\Users\\10004006\\Downloads\\Javascript-main\\Javascript-main\\json_demo.txt");
 JSONDemoTxtHttp.send();
 JSONServReqHead.innerHTML = 'Using GET to get JSON from File';
