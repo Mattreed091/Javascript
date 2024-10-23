@@ -258,10 +258,13 @@ const JSONServReqHead = document.getElementById('JSONServReqHead');
 async function getJSONTxt(file) {
     let myObject = await fetch(file);
     let myText = await myObject.text();
-    document.getElementById('JSONServReq').innerHTML = myText;
+    let myDisplay = myText;
   }
 var getJSONTxtStr = getJSONTxt("http://date.jsontest.com/");
 getJSONTxtStr = JSON.stringify(getJSONTxtStr);
 let getJSONTxtObj = JSON.parse(getJSONTxtStr);
-
+for (const x in getJSONTxtObj) {
+    getJSONTxtObjOutput += x + ":" + getJSONTxtObj[x] + "<br>";
+}
+JSONServReq.innerHTML = getJSONTxtObjOutput;
 JSONServReqHead.innerHTML = 'Using GET to get JSON from File';
