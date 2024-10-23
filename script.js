@@ -255,11 +255,12 @@ JSONArrForLoopHead.innerHTML = 'Looping through JSON array';
 const JSONServReq = document.getElementById('JSONServReq');
 const JSONServReqHead = document.getElementById('JSONServReqHead');
 //creatting HTTP request
-const JSONDemoTxtHttp = new XMLHttpRequest();
-JSONDemoTxtHttp.onload = function() {
-    const myObj = JSON.parse(this.responseText);
-    JSONServReq.innerHTML = myObj.name;
-}
+async function getJSONTxt(file) {
+    let myObject = await fetch(file);
+    let myText = await myObject.text();
+    document.getElementById('JSONServReq').innerHTML = myText;
+  }
+getJSONTxt("C:\\Users\\10004006\\Downloads\\Javascript-main\\Javascript-main\\json_demo.txt") 
 JSONDemoTxtHttp.open("GET", "C:\\Users\\10004006\\Downloads\\Javascript-main\\Javascript-main\\json_demo.txt");
 JSONDemoTxtHttp.send();
 JSONServReqHead.innerHTML = 'Using GET to get JSON from File';
