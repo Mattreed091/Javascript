@@ -262,7 +262,7 @@ async function getJSONTxt(file) {
   }
 let getJSONTxtStr = getJSONTxt("http://date.jsontest.com/");
 getJSONTxtStr = JSON.stringify(getJSONTxtStr);
-let getJSONTxtObj = JSON.parse(getJSONTxtStr);
+const getJSONTxtObj = JSON.parse(getJSONTxtStr);
 let getJSONTxtObjOutput = '';
 for (const x1 in getJSONTxtObj) {
     getJSONTxtObjOutput += x1 + ":" + getJSONTxtObj[x1] + "<br>";
