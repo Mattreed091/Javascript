@@ -264,8 +264,8 @@ let getJSONTxtStr = getJSONTxt("http://date.jsontest.com/");
 getJSONTxtStr = JSON.stringify(getJSONTxtStr);
 let getJSONTxtObj = JSON.parse(getJSONTxtStr);
 let getJSONTxtObjOutput = '';
-for (const x in getJSONTxtObj) {
-    getJSONTxtObjOutput += x + ":" + getJSONTxtObj[x] + "<br>";
+for (const x1 in getJSONTxtObj) {
+    getJSONTxtObjOutput += x1 + ":" + getJSONTxtObj[x1] + "<br>";
 }
 JSONServReq.innerHTML = getJSONTxtObjOutput;
 JSONServReqHead.innerHTML = 'Using GET to get JSON from File';  
