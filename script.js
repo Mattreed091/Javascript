@@ -260,8 +260,8 @@ async function getJSONTxt(file) {
     let myText = await myObject.text();
     let myDisplay = myText;
   }
-let getJSONTxtStr = getJSONTxt("http://date.jsontest.com/");
-getJSONTxtStr = JSON.stringify(getJSONTxtStr);
+let getJSONTxtLit = getJSONTxt("http://date.jsontest.com/");
+let getJSONTxtStr = JSON.stringify(getJSONTxtLit);
 const getJSONTxtObj = JSON.parse(getJSONTxtStr);
 let getJSONTxtObjOutput = '';
 for (const x1 in getJSONTxtObj) {
