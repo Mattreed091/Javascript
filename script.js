@@ -263,9 +263,9 @@ async function getJSONTxt(file) {
 var getJSONTxtStr = getJSONTxt("http://date.jsontest.com/");
 getJSONTxtStr = JSON.stringify(getJSONTxtStr);
 let getJSONTxtObj = JSON.parse(getJSONTxtStr);
-let getJSONTxtObjOutput;
+let getJSONTxtObjOutput ="";
 for (const x in getJSONTxtObj) {
     getJSONTxtObjOutput += x + ":" + getJSONTxtObj[x] + "<br>";
 }
 JSONServReq.innerHTML = getJSONTxtObjOutput;
-JSONServReqHead.innerHTML = 'Using GET to get JSON from File';
+JSONServReqHead.innerHTML = 'Using GET to get JSON from File';  
