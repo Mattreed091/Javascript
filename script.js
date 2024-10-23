@@ -260,7 +260,7 @@ async function getJSONTxt(file) {
     let myText = await myObject.text();
     document.getElementById('JSONServReq').innerHTML = myText;
   }
-getJSONTxt("C:\\Users\\10004006\\Downloads\\Javascript-main\\Javascript-main\\json_demo.txt") 
+getJSONTxt("http://date.jsontest.com/"); 
 JSONDemoTxtHttp.open("GET", "C:\\Users\\10004006\\Downloads\\Javascript-main\\Javascript-main\\json_demo.txt");
 JSONDemoTxtHttp.send();
 JSONServReqHead.innerHTML = 'Using GET to get JSON from File';
