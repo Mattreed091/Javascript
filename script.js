@@ -266,5 +266,5 @@ let getJSONTxtObj = JSON.parse(getJSONTxtStr);
 for (const x in getJSONTxtObj) {
     getJSONTxtObjOutput += x + ":" + getJSONTxtObj[x] + "<br>";
 }
-JSONServReq.innerHTML = getJSONTxtObjOutput;
+JSONServReq.innerHTML = getJSONTxtObj;
 JSONServReqHead.innerHTML = 'Using GET to get JSON from File';
