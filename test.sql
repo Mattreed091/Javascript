@@ -16,3 +16,4 @@ VALUES ('Romy',22, 'A'),
 ('Rohit',24,'C'),
 ('Astha',23,'A'),
 ('Samiksha',23,'A');
+SELECT * FROM demo_table;
